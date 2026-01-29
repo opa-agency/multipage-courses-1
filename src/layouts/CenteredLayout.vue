@@ -1,8 +1,11 @@
 <template>
   <div>
     <Navbar>
-      <div class="flex items-center gap-x-4">
+      <div class="flex min-w-0 items-center gap-x-4">
         <Logo class="h-8 w-auto text-gray-950 dark:text-white" />
+        <div v-if="breadcrumbs" class="min-w-0">
+          <component :is="breadcrumbs" />
+        </div>
       </div>
     </Navbar>
     <main class="px-4 py-8 sm:px-6">
@@ -12,7 +15,12 @@
 </template>
 
 <script setup>
+import { ref, provide } from 'vue'
 import { RouterView } from 'vue-router'
 import Navbar from '../components/Navbar.vue'
 import Logo from '../components/Logo.vue'
+
+const breadcrumbs = ref(null)
+
+provide('breadcrumbs', breadcrumbs)
 </script>

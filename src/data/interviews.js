@@ -21,8 +21,8 @@ const interviews = [
   {
     id: 'annie-king',
     name: 'Annie King',
-    subtitle: 'If the universe already has a plan, why don\'t you?',
-    intro: `Annie King, author of "The Inevitable You: How to Embrace Your Path and Succeed with Relentless Precision", shares her revolutionary approach to life planning through her unique "Legacy Tracker" system and the art of scheduled spontaneity.`,
+    subtitle: 'Dacă universul are deja un plan, de ce nu ai și tu?',
+    intro: `Annie King, autoarea cărții "The Inevitable You: How to Embrace Your Path and Succeed with Relentless Precision", împărtășește abordarea sa revoluționară a planificării vieții prin sistemul unic "Legacy Tracker" și arta spontaneității programate.`,
     video: {
       duration: 2570,
       thumbnail:
@@ -31,25 +31,25 @@ const interviews = [
       hd: 'https://assets.tailwindcss.com/templates/compass/annie-king-1080p.mp4',
     },
     chapters: [
-      { start: 0, title: 'Intro – Meet Annie King' },
-      { start: 20, title: 'Growing Up in an Ultra-Organized Household' },
-      { start: 70, title: "The Future Planners Club: A Legacy of Planning" },
-      { start: 465, title: "The 'Legacy Tracker': A Six-Hour Update Cycle" },
-      { start: 500, title: 'Trello Time and Time Management Philosophy' },
+      { start: 0, title: 'Intro – Cunoaște-o pe Annie King' },
+      { start: 20, title: 'Crescând într-o Gospodărie Ultra-Organizată' },
+      { start: 70, title: "Clubul Planificatorilor de Viitor: O Moștenire a Planificării" },
+      { start: 465, title: "'Legacy Tracker': Un Ciclu de Actualizare de Șase Ore" },
+      { start: 500, title: 'Timpul Trello și Filosofia Managementului Timpului' },
       {
         start: 520,
-        title: 'Scheduling Spontaneity: The Art of Planned Inspiration',
+        title: 'Programarea Spontaneității: Arta Inspirației Planificate',
       },
-      { start: 2220, title: 'Planning for the unexpected' },
-      { start: 2540, title: 'Final Thoughts: Planning as a Lifestyle' },
-      { start: 2570, title: 'Outro – Signing Off' },
+      { start: 2220, title: 'Planificarea pentru Neașteptat' },
+      { start: 2540, title: 'Gânduri Finale: Planificarea ca Stil de Viață' },
+      { start: 2570, title: 'Încheiere' },
     ],
   },
   {
     id: 'nolan-grayson',
     name: 'Dr. Nolan Grayson',
-    subtitle: 'Is Quantum Nirvana the key to true freedom?',
-    intro: `Dr. Nolan Grayson explores quantum determinism, the illusion of free will, and his theory of Quantum Nirvana—achieving true freedom across parallel universes.`,
+    subtitle: 'Este Nirvana Cuantică cheia către adevărata libertate?',
+    intro: `Dr. Nolan Grayson explorează determinismul cuantic, iluzia liberului arbitru și teoria sa despre Nirvana Cuantică—atingerea adevăratei libertăți în universurile paralele.`,
     video: {
       duration: 3480,
       thumbnail:
@@ -58,53 +58,53 @@ const interviews = [
       hd: 'https://assets.tailwindcss.com/templates/compass/nolan-grayson-1080p.mp4',
     },
     chapters: [
-      { start: 0, title: 'Intro – Meet Dr. Nolan Grayson' },
-      { start: 192, title: 'What Is Quantum Determinism?' },
+      { start: 0, title: 'Intro – Cunoaște-l pe Dr. Nolan Grayson' },
+      { start: 192, title: 'Ce Este Determinismul Cuantic?' },
       {
         start: 500,
-        title: 'The \'Superposition Trap\' and Its Impact on Free Will',
+        title: '\'Capcana Suprapoziției\' și Impactul Acesteia asupra Liberului Arbitru',
       },
       {
         start: 825,
         title:
-          'Multiverse Realities: How Every Choice Spreads Across Infinite Worlds',
+          'Realitățile Multiversului: Cum Fiecare Alegere se Răspândește prin Lumi Infinite',
       },
-      { start: 1170, title: 'Entanglement and the Illusion of Choice' },
+      { start: 1170, title: 'Încurcătura și Iluzia Alegerii' },
       {
         start: 1510,
-        title: 'Quantum Lock-In: Are You Stuck in a Predetermined Path?',
+        title: 'Blocarea Cuantică: Ești Blocat pe o Cale Predeterminată?',
       },
       {
         start: 1800,
-        title: 'How Quantum Noise Could Be the Key to True Freedom',
+        title: 'Cum Zgomotul Cuantic Ar Putea Fi Cheia către Adevărata Libertate',
       },
       {
         start: 2140,
         title:
-          'Dr. Grayson\'s Theory of Quantum Nirvana: Achieving Free Will Across Universes',
+          'Teoria Dr. Grayson despre Nirvana Cuantică: Atingerea Liberului Arbitru în Universuri',
       },
       {
         start: 2475,
         title:
-          'How to Hack the Multiverse: Practical Tips for Quantum Alignment',
+          'Cum să Hackuiești Multiversul: Sfaturi Practice pentru Alinierea Cuantică',
       },
       {
         start: 2845,
         title:
-          'Lightning Round: Favorite Thought Experiments, Books, and Routines',
+          'Rundă Rapidă: Experimente de Gândire, Cărți și Rutine Preferate',
       },
       {
         start: 3130,
-        title: 'Final Thoughts – The Future of Free Will in Quantum Mechanics',
+        title: 'Gânduri Finale – Viitorul Liberului Arbitru în Mecanica Cuantică',
       },
-      { start: 3450, title: 'Outro – Signing Off' },
+      { start: 3450, title: 'Încheiere' },
     ],
   },
   {
     id: 'eleanor-vann',
     name: 'Eleanor Vann',
-    subtitle: 'The Passenger and the Path.',
-    intro: `Eleanor Vann, author of "The Path and the Passenger: A Drifter's Guide to Getting Lost", shares her revolutionary approach to travel through her unique philosophy of planned spontaneity and the art of embracing detours.`,
+    subtitle: 'Pasagerul și Calea.',
+    intro: `Eleanor Vann, autoarea cărții "The Path and the Passenger: A Drifter's Guide to Getting Lost", împărtășește abordarea sa revoluționară a călătoriei prin filosofia sa unică a spontaneității planificate și arta de a îmbrățișa ocolișurile.`,
     video: {
       duration: 3610,
       thumbnail:
@@ -113,28 +113,28 @@ const interviews = [
       hd: 'https://assets.tailwindcss.com/templates/compass/eleanor-vann-1080p.mp4',
     },
     chapters: [
-      { start: 0, title: 'Intro – Meet Eleanor Vann' },
-      { start: 200, title: 'The Accidental Journey: From Spain to Belgium' },
-      { start: 478, title: 'The First Drift: Writing Stories on Napkins' },
-      { start: 795, title: 'The Philosophy of Plan-Free Travel' },
+      { start: 0, title: 'Intro – Cunoaște-o pe Eleanor Vann' },
+      { start: 200, title: 'Călătoria Accidentală: Din Spania în Belgia' },
+      { start: 478, title: 'Prima Derivă: Scriind Povești pe Șervețele' },
+      { start: 795, title: 'Filosofia Călătoriei Fără Plan' },
       {
         start: 1208,
-        title: 'Unexpected Adventures: Weddings, Protests, and Folk Concerts',
+        title: 'Aventuri Neașteptate: Nunți, Proteste și Concerte Folk',
       },
-      { start: 1725, title: 'The Art of Random Destinations' },
-      { start: 2118, title: 'Embracing the Unexpected: When Plans Go Awry' },
+      { start: 1725, title: 'Arta Destinațiilor Aleatoare' },
+      { start: 2118, title: 'Îmbrățișând Neașteptatul: Când Planurile Dau Greș' },
       {
         start: 3155,
-        title: 'The Freedom of Letting Go: Why Control Limits Experience',
+        title: 'Libertatea de a Renunța: De Ce Controlul Limitează Experiența',
       },
-      { start: 3530, title: 'Outro – Signing Off' },
+      { start: 3530, title: 'Încheiere' },
     ],
   },
   {
     id: 'sophia-reid',
     name: 'Sophia Reid',
-    subtitle: 'Are we destined by design?',
-    intro: `Sophia Reid, host of the popular podcast "Soul Mates: Destined by Design", shares her revolutionary approach to finding love through her unique "Love Lattice" theory and the art of breadcrumb tracking.`,
+    subtitle: 'Suntem destinați prin design?',
+    intro: `Sophia Reid, gazda popularului podcast "Soul Mates: Destined by Design", împărtășește abordarea sa revoluționară a găsirii iubirii prin teoria sa unică "Love Lattice" și arta urmăririi fărâmiturilor de pâine.`,
     video: {
       duration: 2940,
       thumbnail:
@@ -143,27 +143,27 @@ const interviews = [
       hd: 'https://assets.tailwindcss.com/templates/compass/sophia-reid-1080p.mp4',
     },
     chapters: [
-      { start: 0, title: 'Intro – Meet Sophia Reid' },
+      { start: 0, title: 'Intro – Cunoaște-o pe Sophia Reid' },
       {
         start: 462,
-        title: 'The Waffle House Miracle: A Viral Moment of Destiny',
+        title: 'Miracolul de la Waffle House: Un Moment Viral al Destinului',
       },
       {
         start: 1194,
-        title: 'The Love Lattice: Understanding Breadcrumb Tracking',
+        title: 'Rețeaua Iubirii: Înțelegerea Urmăririi Fărâmiturilor',
       },
       {
         start: 1967,
-        title: 'The Loop of Serendipity: When Breadcrumbs Are Missed',
+        title: 'Bucla Serendipității: Când Fărâmiturile Sunt Ratate',
       },
-      { start: 2909, title: 'Outro – Signing Off' },
+      { start: 2909, title: 'Încheiere' },
     ],
   },
   {
     id: 'mick-larson',
     name: 'Mick Larson',
-    subtitle: 'How to jailbreak reality and hack your fate.',
-    intro: `Mick Larson, known as The Free Will Hacker, shares his radical approach to breaking free from life's default settings through his unique "Reality Reboot" technique and the art of disrupting deterministic patterns.`,
+    subtitle: 'Cum să jailbreak-uiești realitatea și să-ți hackuiești soarta.',
+    intro: `Mick Larson, cunoscut ca The Free Will Hacker, împărtășește abordarea sa radicală de a scăpa de setările implicite ale vieții prin tehnica sa unică "Reality Reboot" și arta de a perturba modelele deterministice.`,
     video: {
       duration: 3630,
       thumbnail:
@@ -172,26 +172,26 @@ const interviews = [
       hd: 'https://assets.tailwindcss.com/templates/compass/mick-larson-1080p.mp4',
     },
     chapters: [
-      { start: 0, title: 'Intro – Meet Mick, The Free Will Hacker' },
+      { start: 0, title: 'Intro – Cunoaște-l pe Mick, The Free Will Hacker' },
       {
         start: 83,
-        title: 'The System of Determinism: Factory Settings of Fate',
+        title: 'Sistemul Determinismului: Setările din Fabrică ale Soartei',
       },
-      { start: 582, title: 'The Jailbreak Technique: Hacking Your Fate' },
+      { start: 582, title: 'Tehnica Jailbreak: Hackuirea Soartei Tale' },
       {
         start: 1215,
-        title: 'When Jailbreaking Fails: Troubleshooting Freedom',
+        title: 'Când Jailbreak-ul Eșuează: Depanarea Libertății',
       },
-      { start: 1982, title: 'Breaking the Cycle of Uncertainty' },
-      { start: 2648, title: 'Final Thoughts on Hacking Reality' },
-      { start: 3599, title: 'Outro – Signing Off' },
+      { start: 1982, title: 'Ruperea Ciclului Incertitudinii' },
+      { start: 2648, title: 'Gânduri Finale despre Hackuirea Realității' },
+      { start: 3599, title: 'Încheiere' },
     ],
   },
   {
     id: 'tom-harris',
     name: 'Tom Harris',
-    subtitle: 'Turning the tables on Tom.',
-    intro: `Tom Harris, the host of the Compass Podcast, shares his journey from questioning karate moves to embracing determinism, offering a unique perspective on free will, neuroscience, and the art of accepting life's predetermined path.`,
+    subtitle: 'Întorcând mesele pe Tom.',
+    intro: `Tom Harris, gazda Compass Podcast, împărtășește călătoria sa de la punerea sub semnul întrebării a mișcărilor de karate până la îmbrățișarea determinismului, oferind o perspectivă unică asupra liberului arbitru, neuroștiinței și arta de a accepta calea predeterminată a vieții.`,
     video: {
       duration: 4210,
       thumbnail:
@@ -200,31 +200,31 @@ const interviews = [
       hd: 'https://assets.tailwindcss.com/templates/compass/tom-harris-interview-1080p.mp4',
     },
     chapters: [
-      { start: 0, title: 'Intro – Meet Tom Harris' },
+      { start: 0, title: 'Intro – Cunoaște-l pe Tom Harris' },
       {
         start: 312,
-        title: 'Early Years: Rocks, Existential Dread, and Karate',
+        title: 'Primii Ani: Pietre, Teamă Existențială și Karate',
       },
       {
         start: 748,
-        title: 'College Life: Late Night Ramen and Philosophical Readings',
+        title: 'Viața de Colegiu: Ramen Noaptea Târziu și Lecturi Filosofice',
       },
       {
         start: 1247,
-        title: 'The Discovery of Exercise: Kettlebells and Existential Crises',
+        title: 'Descoperirea Exercițiilor: Kettlebells și Crize Existențiale',
       },
-      { start: 1679, title: 'Meditation Journey: From Zafu to Deep Practice' },
+      { start: 1679, title: 'Călătoria Meditației: De la Zafu la Practică Profundă' },
       {
         start: 2141,
-        title: "Neuroscience Insights: The Brain's Decision-Making Process",
+        title: 'Perspective din Neuroștiință: Procesul de Luare a Deciziilor al Creierului',
       },
-      { start: 2533, title: 'The Latte Moment: Questioning Free Will' },
+      { start: 2533, title: 'Momentul Latte: Punând Sub Semnul Întrebării Liberul Arbitru' },
       {
         start: 3018,
-        title: 'Practical Applications: Self-Compassion and Understanding',
+        title: 'Aplicații Practice: Auto-Compasiune și Înțelegere',
       },
-      { start: 3424, title: 'Audience Q&A: Rapid-Fire Questions' },
-      { start: 3598, title: 'Outro – Signing Off' },
+      { start: 3424, title: 'Q&A cu Publicul: Întrebări Rapide' },
+      { start: 3598, title: 'Încheiere' },
     ],
   },
 ]

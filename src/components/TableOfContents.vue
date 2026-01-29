@@ -1,7 +1,7 @@
 <template>
   <nav class="sticky top-16">
     <h2 class="text-sm/6 font-semibold text-gray-950 dark:text-white">
-      On this page
+      Pe această pagină
     </h2>
     <ul class="mt-3 flex flex-col gap-3 border-l border-gray-950/10 text-sm/6 text-gray-700 dark:border-white/10 dark:text-gray-400">
       <li

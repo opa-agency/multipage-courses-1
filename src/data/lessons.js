@@ -29,27 +29,27 @@ export async function getLessonContent(slug) {
 const lessons = [
   {
     id: 'orientation',
-    title: 'Orientation: Understanding Where You Are',
+    title: 'Orientare: Înțelegerea Locului În Care Te Afli',
     description:
-      "You need to know where you're starting from, before you can pretend to decide where you're going.",
+      'Trebuie să știi de unde pleci, înainte să poți pretinde că decizi unde te duci.',
     lessons: [
       {
         id: 'landscape-of-choice',
-        title: 'The Landscape of Choice',
+        title: 'Peisajul Alegerii',
         description:
-          'A practical map for navigating the illusion that you actually have any agency at all.',
+          'O hartă practică pentru navigarea iluziei că ai de fapt vreo agentivitate.',
         content: `
-## Dismantling The Illusion
+## Dezmontarea Iluziei
 
-You wake up each morning under the charming delusion that you're about to make a series of choices. What to wear, what to eat, whether to call in sick or drag yourself to work. But you don't actually make choices - you merely observe the outcomes of a series of predetermined processes that have been set in motion long before you even opened your eyes.
+Te trezești în fiecare dimineață sub iluzia fermecătoare că ești pe cale să faci o serie de alegeri. Ce să porți, ce să mănânci, dacă să chemi bolnav sau să te târăști la muncă. Dar nu faci de fapt alegeri - doar observi rezultatele unei serii de procese predeterminate care au fost puse în mișcare cu mult înainte să deschizi ochii.
 
-What if I told you that this comforting notion that you're the author of your life story, is an elaborate fiction your consciousness tells itself? Not in some abstract philosophical sense, but in a very literal, neurologically demonstrable way.
+Dacă ți-aș spune că această noțiune reconfortantă că ești autorul poveștii vieții tale, este o ficțiune elaborată pe care ți-o spune conștiința? Nu într-un sens filozofic abstract, ci într-un mod foarte literal, demonstrabil neurologic.
 
-![Perceived Options|2001x1366](https://assets.tailwindcss.com/templates/compass/perceived-options.{scheme}.png)
+![Opțiuni Percepute|2001x1366](https://assets.tailwindcss.com/templates/compass/perceived-options.{scheme}.png)
 
-### The Deterministic Reality
+### Realitatea Deterministă
 
-Consider a simple function that doubles a number:
+Consideră o funcție simplă care dublează un număr:
 
 \`\`\`javascript
 function double(x) {
@@ -57,11 +57,13 @@ function double(x) {
 }
 \`\`\`
 
-This function is deterministic which means it will always return the same output for the same input. If you pass in \`2\`, it will always return \`4\`. The output is entirely determined by the input.
+Această funcție este deterministă, ceea ce înseamnă că va returna întotdeauna același rezultat pentru aceeași intrare. Dacă introduci \`2\`, va returna întotdeauna \`4\`. Rezultatul este în întregime determinat de intrare.
 
-You are the same way. Your choices are simply the outputs of a complex function that takes in your genetic makeup, past experiences, and current circumstances as inputs. You will always produce the same output for the same input.
+Tu ești la fel. Alegerile tale sunt pur și simplu rezultatele unei funcții complexe care primește ca intrări constituția ta genetică, experiențele trecute și circumstanțele actuale. Vei produce întotdeauna același rezultat pentru aceeași intrare.
 
-The only reason you think you have a choice is because the function is so complex that you can't see all the inputs. In reality, it's many functions chained together, each one feeding into the next.
+Singur
+
+ul motiv pentru care crezi că ai o alegere este pentru că funcția este atât de complexă încât nu poți vedea toate intrările. În realitate, sunt multe funcții înlănțuite, fiecare alimentând-o pe următoarea.
 
 \`\`\`javascript
 function processA(input) {
@@ -76,7 +78,7 @@ function processC(input) {
   return Math.pow(input, 2);
 }
 
-// Chain these functions together
+// Înlănțuiește aceste funcții
 function calculateResult(startingValue) {
   const resultA = processA(startingValue);
   const resultB = processB(resultA);
@@ -84,19 +86,21 @@ function calculateResult(startingValue) {
   return resultC;
 }
 
-// This will always produce exactly 100 when input is 4
+// Aceasta va produce întotdeauna exact 100 când intrarea este 4
 console.log(calculateResult(4));
 \`\`\`
 
-This function is still deterministic but you can see how quickly the result becomes obfuscated when you chain together multiple functions. Now imagine this extrapolated out to your entire life - every single thing that has ever happened to you is an input to your decision-making process.
+Această funcție este încă deterministă, dar poți vedea cât de repede devine rezultatul obscurizat când înlănțui mai multe funcții. Acum imaginează-ți acest lucru extrapol
 
-That time you congratulated yourself for choosing the salad instead of the burger? That was the inevitable result of being bullied at school, your recent doctor's appointment, and the attractive woman at the next table. The illusion that you could have chosen differently is just your brain's charming way of maintaining its sense of importance.
+at la întreaga ta viață - fiecare lucru care ți s-a întâmplat vreodată este o intrare în procesul tău de luare a deciziilor.
 
-If you could run your life again from the beginning, every single thing would happen the same way.
+Acea dată când te-ai felicitat pentru alegerea salatei în loc de burger? Acela a fost rezultatul inevitabil al faptului că ai fost hărțuit la școală, programarea ta recentă la doctor și femeia atrăgătoare de la masa alăturată. Iluzia că ai fi putut alege altfel este doar modul fermecător al creierului tău de a-și menține sentimentul de importanță.
 
-## Understanding Your Decision Space
+Dacă ai putea relua viața de la început, fiecare lucru s-ar întâmpla în același mod.
 
-![Decision Landscape|2000x1178](https://assets.tailwindcss.com/templates/compass/maze.{scheme}.png)
+## Înțelegerea Spațiului Tău Decizional
+
+![Peisajul Deciziei|2000x1178](https://assets.tailwindcss.com/templates/compass/maze.{scheme}.png)
 
 Your decisions are not the result of some grand, conscious deliberation. They are the product of a complex interplay of factors that you have no control over. In reality, your decisions are shaped by:
 
@@ -214,9 +218,9 @@ This doesn't mean ignoring lessons from the past. It means understanding those l
       },
       {
         id: 'recognizing-patterns',
-        title: 'Recognizing Patterns',
+        title: 'Recunoașterea Tiparelor',
         description:
-          "Failures weren't freely chosen but were inevitable given your circumstances.",
+          'Eșecurile nu au fost alese liber, ci au fost inevitabile date circumstanțele tale.',
         content: `
 ## Understanding Your Patterns
 
@@ -234,9 +238,9 @@ Once you recognize your patterns, you can observe them with curiosity rather tha
       },
       {
         id: 'values-and-goals',
-        title: 'Values and Goals',
+        title: 'Valori și Obiective',
         description:
-          'Identify patterns in your interests and abilities that reveal your predetermined direction.',
+          'Identifică tipare în interesele și abilitățile tale care îți arată direcția predeterminată.',
         content: `
 ## Discovering Your Values
 
@@ -261,15 +265,15 @@ Living in alignment with your predetermined values reduces internal conflict and
   },
   {
     id: 'direction',
-    title: 'Direction: Choosing a Path',
+    title: 'Direcție: Alegerea unui Drum',
     description:
-      'Experience the sensation of choice without the burden of true responsibility.',
+      'Experimentează senzația de alegere fără povara unei responsabilități reale.',
     lessons: [
       {
         id: 'mapping-causal-factors',
-        title: 'Mapping the Causal Factors',
+        title: 'Cartografierea Factorilor Cauzali',
         description:
-          'The causes acting on you can give you insight into where they might take you.',
+          'Cauzele care acționează asupra ta îți pot oferi indicii despre unde te vor duce.',
         content: `
 ## The Illusion of Navigation
 
@@ -328,9 +332,9 @@ Examine the patterns in your past "decisions." These patterns reveal the algorit
       },
       {
         id: 'reframing-uncertainty',
-        title: 'Reframing Uncertainty as Agency',
+        title: 'Reformularea Incertitudinii ca Agenție',
         description:
-          "If you squint, not being able to predict the future looks sort of like free will.",
+          'Dacă te uiți cu coada ochiului, faptul că nu poți prezice viitorul seamănă puțin cu liberul arbitru.',
         content: `
 ## The Comforting Illusion
 
@@ -489,15 +493,15 @@ Imagine multiple versions of your life unfolding simultaneously based on differe
   },
   {
     id: 'navigation',
-    title: 'Navigation: Steering Through the Inevitable',
+    title: 'Navigație: Conducerea prin Inevitabil',
     description:
-      'Techniques for aligning with your inevitable trajectory while avoiding nihilism.',
+      'Tehnici pentru alinierea cu traiectoria ta inevitabilă, evitând nihilismul.',
     lessons: [
       {
         id: 'widening-field-of-view',
-        title: 'Widening Your Field of View',
+        title: 'Lărgirea Câmpului de Vedere',
         description:
-          'The universe can be cruel and it\'s important to see that coming.',
+          'Universul poate fi crud și e important să vezi asta din timp.',
         video: {
           duration: 934,
           thumbnail:
@@ -530,9 +534,9 @@ The narrow field of view most people operate with isn't just spatially limited b
       },
       {
         id: 'dealing-with-coincidence',
-        title: 'Dealing with Coincidence',
+        title: 'Gestionarea Coincidenței',
         description:
-          'If something does go the way you intended, realize that this was purely coincidental.',
+          'Dacă ceva merge cum ai intenționat, realizează că a fost pură coincidență.',
         video: null,
         content: `# Dealing with Coincidence
 
@@ -636,15 +640,15 @@ Your personality traits weren't chosen but emerged from the interaction between 
   },
   {
     id: 'destination',
-    title: 'Destination: Arriving Where You Must',
+    title: 'Destinație: Sosirea Acolo Unde Trebuie',
     description:
-      "How to be content with the inconsequential destiny you've been given.",
+      'Cum să fii împăcat cu destinul inconsecvent care ți-a fost dat.',
     lessons: [
       {
         id: 'reframing-achievement',
-        title: 'Reframing Achievement and Failure',
+        title: 'Reformularea Reușitei și Eșecului',
         description:
-          'Pride and regret are just psychological coping mechanisms.',
+          'Mândria și regretul sunt doar mecanisme psihologice de coping.',
         video: null,
         content: `# Reframing Achievement and Failure
 
@@ -668,9 +672,9 @@ Your achievements weren't created by your choices or efforts but emerged from th
       },
       {
         id: 'surrendering-to-success',
-        title: 'Surrendering to Success',
+        title: 'Predarea către Succes',
         description:
-          'Achievements reveal capabilities that were always present rather than self development.',
+          'Reușitele dezvăluie capacități care au fost mereu prezente, nu auto-dezvoltare.',
         video: {
           duration: 1247,
           thumbnail:
@@ -697,9 +701,9 @@ Your capabilities weren't developed through choice but were determined by your g
       },
       {
         id: 'giving-credit',
-        title: "Giving Credit Where it's Due",
+        title: 'Acordarea Meritelor Acolo Unde Se Cuvenește',
         description:
-          'Recognize the broader system that produced your achievement.',
+          'Recunoaște sistemul mai larg care a produs reușita ta.',
         video: {
           duration: 967,
           thumbnail:
@@ -709,15 +713,15 @@ Your capabilities weren't developed through choice but were determined by your g
         content: `# Giving Credit Where It's Due
 
 Recognize the broader system that produced your achievement.
-
+        title: 'Eliberează-te de Povara Responsabilității',
 ## The Myth of Individual Achievement
-
+          'Dacă rezultatele sunt predeterminate, auto-învinovățirea devine inutilă.',
 Throughout your life, you've been taught to view achievements as primarily individual accomplishments—the results of your personal talents, efforts, and choices. This perspective creates the comforting illusion that you are the author of your successes, deserving primary credit for the outcomes you experience.
 
 This individualistic narrative isn't just philosophically incorrect—it fundamentally misunderstands how achievements actually emerge. From a deterministic perspective, your successes aren't individual accomplishments but systemic outcomes—the inevitable results of vast causal networks that extend far beyond your individual existence.
-
+        title: 'Exercițiu: Scrierea Autobiografiei Tale',
 You aren't the primary cause of your achievements but merely their final expression point—the visible manifestation of countless invisible factors that predetermined whatever successes you experience. Understanding this reality transforms your relationship with achievement from isolated pride to contextual appreciation.
-
+          'Vezi-ți viața ca o narațiune predeterminată, nu ca o serie de alegeri.',
 ## The Reality of Systemic Causation
 
 To understand why individual credit is misplaced, we must recognize how achievements actually emerge:

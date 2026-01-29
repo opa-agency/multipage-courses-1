@@ -1,57 +1,47 @@
 <template>
   <div>
-    <div class="border-b border-gray-950/10 dark:border-white/10">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6">
-        <nav class="flex gap-8 overflow-x-auto">
-          <router-link to="/" class="whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200">Home</router-link>
-          <span class="text-gray-400">/</span>
-          <span class="px-1 py-4 text-sm text-gray-950 dark:text-white">Resources</span>
-        </nav>
-      </div>
-    </div>
-
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <h1 class="mt-10 text-3xl/10 font-normal tracking-tight text-gray-950 sm:mt-14 dark:text-white">
-        Resources
+        Resurse
       </h1>
       <p class="mt-6 max-w-xl text-base/7 text-gray-600 dark:text-gray-400">
-        A collection of resources that can help you navigate uncertainty and make choices aligned with your values and goals.
+        O colecție de resurse care te pot ajuta să navighezi incertitudinea și să faci alegeri aliniate cu valorile și obiectivele tale.
       </p>
 
       <div class="mt-16 space-y-16">
       <!-- Writing Section -->
       <PageSection>
         <template #title>
-          <h2>Writing</h2>
+          <h2>Articole</h2>
         </template>
         <p class="text-sm/8 text-gray-600 dark:text-gray-400">
-          Learn to separate signal from noise, and instincts from impulses.
+          Învață să separi semnalul de zgomot și instinctele de impulsuri.
         </p>
         <div class="mt-8 max-w-2xl space-y-6">
           <ContentLink
             type="article"
-            title="The Illusion of Choice"
-            description="How Modern Neuroscience Supports Determinism."
+            title="Iluzia Alegerii"
+            description="Cum Neuroștiința Modernă Susține Determinismul."
           />
           <ContentLink
             type="article"
-            title="Beyond Free Will: A Brief History of Deterministic Philosophy"
-            description="Tracing deterministic thought from ancient stoics to modern neuroscience."
+            title="Dincolo de Liberul Arbitru: O Scurtă Istorie a Filosofiei Deterministe"
+            description="Urmărind gândirea deterministă de la stoicii antici la neuroștiința modernă."
           />
           <ContentLink
             type="article"
-            title="Your Life Story Was Written Before You Were Born"
-            description="How to fend off Nihilism when you have no agency."
+            title="Povestea Vieții Tale A Fost Scrisă Înainte Să Te Naști"
+            description="Cum să combate Nihilismul când nu ai agenție."
           />
           <ContentLink
             type="article"
-            title="5 Ways Your 'Free Will' is Actually Making You Miserable"
-            description="How belief in choice creates unnecessary suffering in everyday life."
+            title="5 Moduri În Care 'Liberul Tău Arbitru' Te Face De Fapt Nefericit"
+            description="Cum credința în alegere creează suferință inutilă în viața de zi cu zi."
           />
           <ContentLink
             type="article"
-            title="The Accountability Myth: Why Self-Blame Makes No Logical Sense"
-            description="Examining the logical inconsistencies in holding yourself responsible."
+            title="Mitul Responsabilității: De Ce Auto-Acuzarea Nu Are Sens Logic"
+            description="Examinând inconsistențele logice în a te face responsabil."
           />
         </div>
       </PageSection>
@@ -59,10 +49,10 @@
       <!-- Podcasts Section -->
       <PageSection>
         <template #title>
-          <h2>Podcasts</h2>
+          <h2>Podcasturi</h2>
         </template>
         <p class="text-sm/8 text-gray-600 dark:text-gray-400">
-          Compelling conversations from the forefathers of determinism and free will.
+          Conversații captivante de la fondatorii determinismului și liberării voinței.
         </p>
         <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
           <VideoCard
@@ -89,10 +79,10 @@
       <!-- Books Section -->
       <PageSection>
         <template #title>
-          <h2>Books</h2>
+          <h2>Cărți</h2>
         </template>
         <p class="text-sm/8 text-gray-600 dark:text-gray-400">
-          A carefully curated collection of books that explore the intersection of choice, purpose, and personal growth.
+          O colecție atent selectată de cărți care explorează intersecția dintre alegere, scop și dezvoltare personală.
         </p>
         <Bookshelf class="mt-8">
           <Book
@@ -126,36 +116,36 @@
       <!-- Tools Section -->
       <PageSection>
         <template #title>
-          <h2>Tools</h2>
+          <h2>Instrumente</h2>
         </template>
         <p class="text-sm/8 text-gray-600 dark:text-gray-400">
-          Things I use to calm my mind and make decisions.
+          Lucruri pe care le folosesc pentru a-mi liniști mintea și a lua decizii.
         </p>
         <div class="mt-8 grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
           <ContentLink
             type="tool"
-            title="Deterministic Coin"
-            description="A coin with heads on both sides."
+            title="Monedă Deterministă"
+            description="O monedă cu cap pe ambele părți."
           />
           <ContentLink
             type="tool"
-            title="Magic 8-Ball"
-            description="Every answer is just the shrugging emoji."
+            title="Bila Magică 8"
+            description="Fiecare răspuns este doar emoji-ul de ridicare din umeri."
           />
           <ContentLink
             type="tool"
             title="BetterHelp"
-            description="Sometimes you just need to talk to someone."
+            description="Uneori ai nevoie doar să vorbesti cu cineva."
           />
           <ContentLink
             type="tool"
             title="Post-it Notes"
-            description="I use the green ones for my good ideas."
+            description="Folosesc cele verzi pentru ideile mele bune."
           />
           <ContentLink
             type="tool"
-            title="The Mobius Decision Tree"
-            description="A decision-making flowchart that always leads back to the same outcome."
+            title="Arborele de Decizii Mobius"
+            description="O diagramă de luare a deciziilor care conduce mereu la același rezultat."
           />
         </div>
       </PageSection>
@@ -165,9 +155,23 @@
 </template>
 
 <script setup>
+import { inject, ref, h, onMounted } from 'vue'
+import { RouterLink } from 'vue-router'
+import Breadcrumbs from '../components/Breadcrumbs.vue'
 import PageSection from '../components/PageSection.vue'
 import ContentLink from '../components/ContentLink.vue'
 import VideoCard from '../components/VideoCard.vue'
 import Bookshelf from '../components/Bookshelf.vue'
 import Book from '../components/Book.vue'
+
+const breadcrumbsRef = inject('breadcrumbs', ref(null))
+
+onMounted(() => {
+  if (!breadcrumbsRef) return
+  breadcrumbsRef.value = () => h(Breadcrumbs, {}, [
+    h(RouterLink, { to: '/', class: 'whitespace-nowrap text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200' }, () => 'Acasă'),
+    h('span', { class: 'text-gray-400' }, '/'),
+    h('span', { class: 'text-gray-950 dark:text-white' }, 'Resurse'),
+  ])
+})
 </script>

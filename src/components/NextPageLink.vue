@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-4">
-    <p class="text-sm/7 font-semibold text-gray-500">What's next</p>
+    <p class="text-sm/7 font-semibold text-gray-500">Ce urmează</p>
     <router-link
       :to="href"
       class="group flex gap-x-6 rounded-2xl border border-gray-200 px-6 py-4 hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-600"

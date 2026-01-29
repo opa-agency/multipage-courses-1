@@ -11,7 +11,7 @@
             :poster="lesson.video.thumbnail"
           >
             <source :src="lesson.video.url" type="video/mp4" />
-            Your browser does not support the video tag.
+            Browserul tău nu suportă redarea video.
           </video>
         </div>
       </div>
@@ -41,8 +41,8 @@
             />
             <NextPageLink
               v-else
-              title="Interviews"
-              description="Explore interviews with industry experts and thought leaders."
+              title="Interviuri"
+              description="Explorează interviuri cu experți din industrie și lideri de opinie."
               href="/interviews"
             />
           </div>
@@ -166,7 +166,7 @@ const loadLesson = async (slug) => {
   // Set breadcrumbs in the layout
   if (breadcrumbsRef && lesson.value) {
     breadcrumbsRef.value = () => h(Breadcrumbs, {}, [
-      h(RouterLink, { to: '/', class: 'whitespace-nowrap text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200' }, () => 'Home'),
+      h(RouterLink, { to: '/', class: 'whitespace-nowrap text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200' }, () => 'Acasă'),
       h('span', { class: 'hidden text-gray-400 md:inline' }, '/'),
       h(RouterLink, { 
         to: `/#${lesson.value.module.id}`, 

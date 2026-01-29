@@ -1,17 +1,5 @@
 <template>
   <div v-if="interview">
-    <div class="border-b border-gray-950/10 dark:border-white/10">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6">
-        <nav class="flex gap-8 overflow-x-auto">
-          <router-link to="/" class="whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200">Home</router-link>
-          <span class="text-gray-400">/</span>
-          <router-link to="/interviews" class="px-1 py-4 text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200">Interviews</router-link>
-          <span class="text-gray-400">/</span>
-          <span class="px-1 py-4 text-sm text-gray-950 dark:text-white">{{ interview.name }}</span>
-        </nav>
-      </div>
-    </div>
-
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="mx-auto max-w-2xl py-14">
         <div class="space-y-16">
@@ -23,14 +11,14 @@
               :poster="interview.video.thumbnail"
             >
               <source :src="interview.video.hd" type="video/mp4" />
-              Your browser does not support the video tag.
+              Browserul tău nu suportă redarea video.
             </video>
           </div>
 
           <!-- Header -->
           <div class="space-y-6">
             <hgroup>
-              <p class="text-sm/7 font-semibold text-gray-500">Interview</p>
+              <p class="text-sm/7 font-semibold text-gray-500">Interviu</p>
               <h1 class="text-3xl tracking-tight text-gray-950 dark:text-white">
                 {{ interview.name }}
               </h1>
@@ -47,7 +35,7 @@
           <!-- Chapters -->
           <div v-if="interview.chapters">
             <h2 class="border-b border-gray-950/5 pb-4 text-2xl font-medium tracking-tight text-gray-950 dark:border-white/10 dark:text-white">
-              Chapters
+              Capitole
             </h2>
             <div class="mt-8 space-y-4">
               <div
@@ -71,19 +59,21 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, onMounted, inject, h } from 'vue'
+import { useRoute, RouterLink } from 'vue-router'
+import Breadcrumbs from '../components/Breadcrumbs.vue'
 import ClockIcon from '../icons/ClockIcon.vue'
 import { getInterview } from '../data/interviews'
 
 const route = useRoute()
 const interview = ref(null)
+const breadcrumbsRef = inject('breadcrumbs', ref(null))
 
 const formatDuration = (seconds) => {
   if (!seconds) return ''
   const h = Math.floor(seconds / 3600)
   const m = Math.floor((seconds % 3600) / 60)
-  return h > 0 ? (m > 0 ? `${h} hr ${m} min` : `${h} hr`) : `${m} min`
+  return h > 0 ? (m > 0 ? `${h} oră ${m} min` : `${h} oră`) : `${m} min`
 }
 
 const formatTimestamp = (seconds) => {
@@ -100,6 +90,15 @@ onMounted(async () => {
   const slug = route.params.slug
   if (slug) {
     interview.value = await getInterview(slug)
+    if (breadcrumbsRef && interview.value) {
+      breadcrumbsRef.value = () => h(Breadcrumbs, {}, [
+        h(RouterLink, { to: '/', class: 'whitespace-nowrap text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200' }, () => 'Acasă'),
+        h('span', { class: 'text-gray-400' }, '/'),
+        h(RouterLink, { to: '/interviews', class: 'whitespace-nowrap text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200' }, () => 'Interviuri'),
+        h('span', { class: 'text-gray-400' }, '/'),
+        h('span', { class: 'text-gray-950 dark:text-white' }, interview.value.name),
+      ])
+    }
   }
 })
 </script>

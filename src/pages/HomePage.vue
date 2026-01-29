@@ -13,10 +13,10 @@
       <div class="relative">
         <div class="px-4 pt-48 pb-12 lg:py-24">
           <Logo class="h-8 fill-gray-950 dark:fill-white" />
-          <h1 class="sr-only">Course overview</h1>
+          <h1 class="sr-only">Prezentare curs</h1>
           <p class="mt-7 max-w-lg text-base/7 text-pretty text-gray-600 dark:text-gray-400">
-            A comprehensive journey that helps you navigate uncertainty and
-            make choices aligned with your values and goals.
+            O călătorie cuprinzătoare care te ajută să navighezi incertitudinea și
+            să faci alegeri aliniate cu valorile și obiectivele tale.
           </p>
           <div
             v-if="modules.length"
@@ -24,14 +24,14 @@
           >
             <div class="flex items-center gap-1.5">
               <BookIcon class="stroke-gray-950/40 dark:stroke-white/40" />
-              {{ modules.length }} modules
+              {{ modules.length }} module
             </div>
             <span class="hidden text-gray-950/25 dark:text-white/25 sm:inline">
               &middot;
             </span>
             <div class="flex items-center gap-1.5">
               <LessonsIcon class="stroke-gray-950/40 dark:stroke-white/40" />
-              {{ lessons.length }} lessons
+              {{ lessons.length }} lecții
             </div>
             <span class="hidden text-gray-950/25 dark:text-white/25 sm:inline">
               &middot;
@@ -50,7 +50,7 @@
               class="inline-flex items-center gap-x-2 rounded-full bg-gray-950 px-3 py-0.5 text-sm/7 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
             >
               <PlayIcon class="fill-white" />
-              Start the course
+              Începe cursul
             </RouterLink>
           </div>
         </div>
@@ -64,7 +64,7 @@
           >
             <div class="space-y-2 border-b border-gray-950/10 pb-8 dark:border-white/10">
               <p class="text-sm/7 font-semibold text-gray-950 dark:text-white">
-                Part {{ index + 1 }}
+                Partea {{ index + 1 }}
               </p>
             </div>
             <div class="max-w-2xl">
@@ -119,7 +119,7 @@ const formatDuration = (seconds) => {
   if (!seconds) return ''
   const h = Math.floor(seconds / 3600)
   const m = Math.floor((seconds % 3600) / 60)
-  return h > 0 ? (m > 0 ? `${h} hr ${m} min` : `${h} hr`) : `${m} min`
+  return h > 0 ? (m > 0 ? `${h} oră ${m} min` : `${h} oră`) : `${m} min`
 }
 
 onMounted(async () => {

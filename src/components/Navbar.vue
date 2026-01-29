@@ -15,15 +15,15 @@
         @close="mobileMenuOpen = false"
       />
       <div class="hidden gap-x-6 text-sm/6 text-gray-950 dark:text-white lg:flex">
-        <RouterLink to="/">Course</RouterLink>
-        <RouterLink to="/interviews">Interviews</RouterLink>
-        <RouterLink to="/resources">Resources</RouterLink>
+        <RouterLink to="/">Curs</RouterLink>
+        <RouterLink to="/interviews">Interviuri</RouterLink>
+        <RouterLink to="/resources">Resurse</RouterLink>
         <div class="relative">
           <button
             @click="accountMenuOpen = !accountMenuOpen"
             class="inline-flex items-center gap-x-2 focus:outline-none"
           >
-            Account
+            Cont
             <ChevronDownIcon class="stroke-gray-950 dark:stroke-white" />
           </button>
           <Transition
@@ -42,19 +42,19 @@
                 to="#"
                 class="block rounded-md px-3 py-0.5 text-sm/7 text-gray-950 hover:bg-blue-500 hover:text-white dark:text-white"
               >
-                Settings
+                Setări
               </RouterLink>
               <RouterLink
                 to="#"
                 class="block rounded-md px-3 py-0.5 text-sm/7 text-gray-950 hover:bg-blue-500 hover:text-white dark:text-white"
               >
-                Support
+                Suport
               </RouterLink>
               <RouterLink
                 to="/login"
                 class="block rounded-md px-3 py-0.5 text-sm/7 text-gray-950 hover:bg-blue-500 hover:text-white dark:text-white"
               >
-                Sign out
+                Ieșire
               </RouterLink>
             </div>
           </Transition>

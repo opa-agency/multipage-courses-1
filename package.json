@@ -9,7 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "@shikijs/colorized-brackets": "^3.21.0",
+    "clsx": "^2.1.1",
+    "shiki": "^3.21.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.15",

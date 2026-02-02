@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>multipage-courses-1</title>
-    <script type="module" crossorigin src="/assets/index-BDIdLTA4.js"></script>
+    <script>
+      // Handle SPA routing on page refresh
+      (function() {
+        let redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-COwV7NvD.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Wrk0n_6I.css">
   </head>
   <body>
